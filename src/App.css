@@ -1,0 +1,24 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.icons a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.icons a:hover {
+  color: #61dafb;
+}
