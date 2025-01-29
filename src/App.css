@@ -1,24 +1,72 @@
+/* Geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 .App {
   text-align: center;
-  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url('imagem/imagemdefundo.jpg'); /* Caminho da imagem */
+  background-size: cover;  /* A imagem cobre todo o fundo */
+  background-position: center;  /* A imagem fica centralizada */
+  background-attachment: fixed;  /* Fixa a imagem durante o rolar da página */
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.5);  /* Fundo semitransparente para destacar o conteúdo */
+  padding: 50px 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+}
+
+.header-content h1 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.header-content p {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.icons {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  color: white;
+  gap: 20px;
 }
 
-.icons a {
-  margin: 0 15px;
+.icon-link {
   color: white;
-  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.icons a:hover {
-  color: #61dafb;
+.icon-link:hover {
+  transform: scale(1.1);
+  color: #00b5e2;
+}
+
+footer {
+  position: absolute;
+  bottom: 20px;
+  font-size: 1rem;
+  color: #777;
 }
